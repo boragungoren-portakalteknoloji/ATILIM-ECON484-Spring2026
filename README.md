@@ -34,19 +34,19 @@ The course follows a step-by-step journey through the ML Lifecycle:
 
 4. Model Decay / Cold Start
 
-    Focus: --
+    Focus: Lifecycle Management & Reliability.
 
-    Topics: -- 
+    Topics: Concept Drift (the world changes), Data Drift (the input changes), and the "Boiling Frog" problem. Introduction to Cold Start problems in new environments. 
 
-    Goal: --
+    Goal: Understanding that models are living systems that "expire," and learning how to diagnose when a model is no longer safe to use.
 
 5. Decision Defense / Model Ethics
 
-    Focus: --
+    Focus: Professional Accountability.
 
-    Topics: -- 
+    Topics: Model Interpretation, Business Metric alignment, Bias detection, and the "Manager’s Questions." 
 
-    Goal: --
+    Goal: Translating mathematical output into defensible business strategies. Moving from "It works" to "It is safe."
 
 
 Additional topics will be added over time. 
@@ -56,35 +56,35 @@ Additional topics will be added over time.
 The course repo includes Python projects to demonstrate. Each folder contains a project and a specific explanation of the code.
 1. Data Visualization
 
-    Focus: --
+    Focus: Pre-modeling Sanity Checks.
 
-    Topics: -- 
+    Topics: Mosaic plots, Scatter plots, and Box plots for analyzing feature relationships.
 
-    Goal: --
+    Goal: Learning to "see" the data distribution to catch errors before the model does.
 
 2. Experiment Ledgers
 
-    Focus: --
+    Focus: Immutable Record Keeping.
 
-    Topics: -- 
+    Topics: Linking Git commits to Excel results, Hypothesis logging, and parameter tracking. 
 
-    Goal: --
+    Goal: Creating a "paper trail" that proves exactly how a result was achieved.
 
 3. Simulated Decay 
 
-    Focus: --
+    Focus: Stress Testing & Fragility.
 
-    Topics: -- 
+    Topics:  Injecting noise, simulating sensor failure, and observing the collapse of model performance. 
 
-    Goal: --
+    Goal: Experiencing the "Garbage In, Garbage Out" reality firsthand in a controlled environment.
 
 4. Drift Monitoring
 
-    Focus: --
+    Focus: Operational Safety.
 
-    Topics: -- 
+    Topics: Statistical tests for distribution shifts and automated threshold alerts.
 
-    Goal: --
+    Goal: Building an automated "watchdog" system to detect when a model needs retraining.
 
 You can browse the repo, but descriptions will be added over time. 
 
@@ -102,16 +102,16 @@ These assignment deserve a short discussion:
 - Assignment 3 focuses on "Fragility". The idea here is to simulate decay and learn from it.
 - Assignment 4 focuses on "Observability". This is the logical response to the prior assignment: "My model broke (HW3), so now I need a system to watch it (HW4)."
 
-As these assignments are individual and highly digitized we take some precautions against cheating. For individual execution; students have to:
-- Use their **student ID as seed** in their homeworks rather than the default "42" in sample code
-- Use **assigned datasets** so that the issues they face may be different
+**Scientific Integrity & Unique Results**
 
-
+To ensure every student engages with the material individually and experiences the "messiness" of real data, we enforce strict reproducibility rules: 
+- **Unique Seeds**: You must use your Student ID as the random seed in your code (instead of the default 42). This ensures your train/test splits are unique to you.
+- **Assigned Datasets**: You may be assigned specific subsets of data. This means your errors and your results will be unique, making copying impossible.
 
 **Tools and Guidelines**
-- GitHub: All assignments and projects must be uploaded here. Mastering version control is required.
-- IDE: I recommend using JetBrains PyCharm (Student License is free). You can also use VS Code.
-- AI Policy: You are encouraged to use LLMs (like ChatGPT or Gemini) for writing code. However, you are the "Lead Architect." You must understand and explain every line of code the AI generates.
+- **GitHub**: All assignments and projects must be uploaded here. Mastering version control is required.
+- **IDE**: I recommend using JetBrains PyCharm (Student License is free). You can also use VS Code.
+- **AI Policy**: You are encouraged to use LLMs (like ChatGPT or Gemini) for writing code. However, you are the "Lead Architect." You must understand and explain every line of code the AI generates.
 
 **Note for Students: The "Decision Defense"**
 
