@@ -32,15 +32,19 @@ def main():
 
     # --- PHASE 1: PROVISIONING (The Infrastructure) ---
     try:
-        # run_id, folds_dir, models_dir ve ledger_path değerlerini yakalıyoruz.
+        # We create the experiement assets
+        # We capture run_id, folds_dir, models_dir ve ledger_path as return variables
         run_id, f_dir, m_dir, l_file = setup_runs.create_experiment_assets(RAW_DATA_PATH)
         setup_runs.initialize_ledger(l_file)
         setup_runs.split_and_save_data(RAW_DATA_PATH, f_dir, n_splits=10, seed=MY_SEED)
     except FileExistsError:
+        # if you have a system clock error or if you try to run the experiments too fast
+        # this can happen. "too fast" means starting another experiment run within the same second.
         print("[CRITICAL] Run ID collision. Please check the system clock.")
         return
 
     # Listing the training files to be processed
+    # Note that the model training data sets were created in the previous step and exist under Experiments
     train_files = sorted([f for f in os.listdir(f_dir) if f.startswith("train_")])
     train_metrics = {} # Dictionary
 
@@ -53,11 +57,15 @@ def main():
         train_full_path = os.path.join(f_dir, train_file)
 
         # 1. Train Algorithm 01 (Naive Baseline)
+        # This is the path where we will save the model
         a01_path = os.path.join(m_dir, f"algo01_f{fold_id}.pkl")
+
+        # We will need training duration for Ledger
         start_time = time.time()
         model_trainer.train_algo_01(train_full_path, a01_path)
         duration01 = time.time() - start_time # time in seconds
         train_metrics[f"a01_{fold_id}"] = duration01
+        # We store the duration in the dictionary defined before.
 
         # 2. Train Algorithm 02 (Machine Learning - Decision Tree)
         a02_path = os.path.join(m_dir, f"algo02_f{fold_id}.pkl")
