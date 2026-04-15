@@ -5,7 +5,8 @@ This repository contains the course materials, lecture notes, and projects for E
 **Course Philosophy:** "Beyond Model Training." Most courses focus only on training models. In ECON 484, we focus on the entire lifecycle: cleaning messy data, making honest assumptions, and defending our results.
 
 **Note on Syllabus and Slides:** The lecture slides and the syllabus may not match perfectly. This is intentional. The course is dynamic and changes based on current technology and student needs. This repository is the most up-to-date source for the course flow.
-Course Structure
+
+**Course Structure**
 
 The course follows a step-by-step journey through the ML Lifecycle:
 1. Strategy and Data Preparation
