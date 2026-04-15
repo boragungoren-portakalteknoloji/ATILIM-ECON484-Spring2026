@@ -107,6 +107,7 @@ These assignment deserve a short discussion:
 To ensure every student engages with the material individually and experiences the "messiness" of real data, we enforce strict reproducibility rules: 
 - **Unique Seeds**: You must use your Student ID as the random seed in your code (instead of the default 42). This ensures your train/test splits are unique to you.
 - **Assigned Datasets**: You may be assigned specific subsets of data. This means your errors and your results will be unique, making copying impossible.
+- **Use of LLMs**: Students are allowed and encouraged to use LLMs (ie. ChatGPT, Gemini, Claude). But they are also required to commit their "Prompt History" as a markdown file. If no such file is committed to their repo, then they are assumed to have claimed no AI use.  
 
 **Tools and Guidelines**
 - **GitHub**: All assignments and projects must be uploaded here. Mastering version control is required.
