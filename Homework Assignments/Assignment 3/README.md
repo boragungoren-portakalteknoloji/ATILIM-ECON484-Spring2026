@@ -22,7 +22,7 @@ Before touching the data, you must understand your tool: the **Random Forest (RF
 
 ## Step 1: The Foundation (Baseline & Chaos)
 
-### A. The Dataset: Air Quality in India
+### A. The Dataset: [Air Quality in India](https://www.kaggle.com/datasets/ankushpanday1/air-quality-data-in-india-2015-2024/data)
 For non-engineers, treat these columns as "Atmospheric Vital Signs":
 * **PM2.5 / PM10:** Tiny dust/soot particles. 
 * **NOx / SO2 / CO:** Toxic gases measured in parts per billion.
